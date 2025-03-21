@@ -78,6 +78,30 @@ body {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden; /* Evita el scroll */
+  }
+
+  .flowers {
+    transform: scale(0.8); /* Reduce el tamaño de las flores */
+  }
+
+  .titulo {
+    font-size: 1.2rem; /* Ajusta el tamaño del título */
+    top: 3%; /* Mueve un poco más arriba */
+    letter-spacing: 5px;
+  }
+
+  .titulo2 {
+    font-size: 1rem;
+    bottom: 2%; /* Ajusta para que no quede fuera de pantalla */
+    letter-spacing: 3px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
